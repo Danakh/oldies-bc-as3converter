@@ -90,6 +90,16 @@ package bc.flash.text
 			throw new NotImplementedError();
 		}
 
+		public function get cacheAsBitmap() : Boolean
+		{
+			throw new NotImplementedError();
+		}
+
+		public function set cacheAsBitmap(value : Boolean) : void
+		{
+			throw new NotImplementedError();
+		}
+
 		public function get caretIndex() : int
 		{
 			throw new NotImplementedError();

@@ -36,7 +36,7 @@ package bc.flash
 
 		public function reverse() : Vector { throw new NotImplementedError(); }
 
-		/* public function shift() : *; */
+		public function shift() : _$_generic_$_ { throw new NotImplementedError(); }
 
 		public function slice(startIndex : int = 0, endIndex : int = 16777215) : Vector { throw new NotImplementedError(); }
 

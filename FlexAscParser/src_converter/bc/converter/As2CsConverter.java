@@ -689,7 +689,7 @@ public class As2CsConverter extends As2WhateverConverter
 					
 					for (BcTypeNode packageType : packageTypes)
 					{
-						if (typeName.equals(packageType.getName()) && !typeQualifier.equals(packageType.getQualifier()))
+						if (typeName.equals(packageType.getName()) && (typeQualifier!=null && !typeQualifier.equals(packageType.getQualifier())))
 						{
 							BcTypeNode duplicateType;
 							if ((duplicateType = findDuplicateType(usingTypes, uniqueType.getName())) != null)

@@ -203,6 +203,13 @@ package bc.flash.display
 			return resultMatrix;
 		}
 
+		/** The rectangle of the object. */
+		public function getRect(i_targetCoordinateSpace:DisplayObject) : Rectangle
+		{
+			throw new NotImplementedError();
+		}
+
+
 		/** Transforms a point from the local coordinate system to global (stage) coordinates. */
 		public function localToGlobal(localPoint : Point) : Point 
 		{

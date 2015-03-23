@@ -5,6 +5,7 @@ package bc.flash.events
 	{
 		public static const CLICK : String = "click";
 		public static const DOUBLE_CLICK : String = "doubleClick";
+		public static const RIGHT_CLICK : String = "rightClick";
 		public static const MOUSE_DOWN : String = "mouseDown";
 		public static const MOUSE_MOVE : String = "mouseMove";
 		public static const MOUSE_OUT : String = "mouseOut";

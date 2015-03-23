@@ -114,5 +114,7 @@ package bc.flash.events
         
         /** A string that identifies the event. */
         public function get type():String { return mType; }
+        
+        public function preventDefault():void {}
 	}
 }

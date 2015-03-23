@@ -93,6 +93,11 @@ package bc.flash.xml
 		}
 
 		/* public function localName() : *; */
+		public function localName() : String
+		{
+			return mName;
+		}
+
 		public function name() : String
 		{
 			return mName;

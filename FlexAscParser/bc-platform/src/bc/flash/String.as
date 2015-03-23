@@ -32,6 +32,8 @@ package bc.flash
 
 		public function replace(p : String, repl : String) : String { throw new NotImplementedError(); }
 
+		public function replace(p : RegExp, repl : String) : String { throw new NotImplementedError(); }
+
 		/* public function search(p : * = undefined) : int; */
 
 		public function slice(start : uint, end : uint = 2147483647) : String { throw new NotImplementedError(); }

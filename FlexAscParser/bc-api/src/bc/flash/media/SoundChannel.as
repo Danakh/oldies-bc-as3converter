@@ -5,7 +5,7 @@ package bc.flash.media
 
 
 	[ConvertOnce]
-	public final class SoundChannel /* extends EventDispatcher */
+	public final class SoundChannel extends EventDispatcher
 	{
 		private var mSoundTransform : SoundTransform;
 		

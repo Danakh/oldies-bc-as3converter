@@ -4052,6 +4052,10 @@ public abstract class As2WhateverConverter
 			return true;
 		}
 
+		if (null == type)
+		{
+			throw new NotImplementedException();
+		}
 		return type.getName().equals(name);
 	}
 
@@ -4663,7 +4667,8 @@ public abstract class As2WhateverConverter
 	{
 		if (!condition)
 		{
-			String message = new Formatter().format(format, args).toString();
+			Formatter formatter = new Formatter().format(format, args);
+			String message = formatter.toString();
 			String className = BcGlobal.lastBcClass != null ? BcGlobal.lastBcClass.toString() : null;
 			String functionName = BcGlobal.lastBcFunction != null ? BcGlobal.lastBcFunction.toString() : null;
 			String fullErrorMessage = String.format("Conversion failed:\n\treason: %s\n\tclass: %s\n\tfunction: %s", message, className, functionName);
